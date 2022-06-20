@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe id="tsm-iframe" src="https://www.pre1.gb.travelsupermarket.com/en-gb/holidays/gadget/?env=live&awin=true&headText=%3Csvg%20onloaD%20%3d%20alert%26%2340;%27XSS%27)%20/%3E" style="overflow: hidden; height: 1000px; width: 1000px;"></iframe>
-    <iframe id="tsm-iframe" src="https://www.pre1.gb.travelsupermarket.com/en-gb/holidays/gadget/?env=live&awin=true&headText=Hello There" style="overflow: hidden; height: 1000px; width: 1000px;"></iframe>
+    <p> This gadget shouldnt be displayed, as the param awin=true isnt set </p>
+    <iframe id="tsm-iframe" src="https://www.travelsupermarket.com/en-gb/holidays/gadget/?env=live&headText=Hello There" style="overflow: hidden; height: 500px; width: 500px;"></iframe>
+    <p> This gadget should be displayed, as the param awin=true is set </p>
+    <iframe id="tsm-iframe" src="https://www.travelsupermarket.com/en-gb/holidays/gadget/?env=live&awin=true&headText=Hello There" style="overflow: hidden; height: 500px; width: 500px;"></iframe>
 </body>
 </html>
